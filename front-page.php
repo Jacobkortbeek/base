@@ -13,5 +13,8 @@
           </div>
         </div>
       </div>
+
+      <?php get_template_part( 'template-parts/about', 'none' ); ?>
+
   </main>
 <?php get_footer(); ?>

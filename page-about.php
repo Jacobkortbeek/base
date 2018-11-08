@@ -5,4 +5,4 @@
  */
 ?>
 
-<p>This is the about page</p>
+<?php get_template_part( 'template-parts/about', 'none' ); ?>
