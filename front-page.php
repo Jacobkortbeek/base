@@ -8,9 +8,9 @@
                                               <?php } ?>">
         <div class="row">
           <div class="col-md-12 logo">
-            <?php $logo-hero = get_field( 'logo-hero' ); ?>
-            <?php if ( $logo-hero ) { ?>
-	             <img src="<?php echo $logo-hero['url']; ?>" alt="<?php echo $logo-hero['alt']; ?>" />
+            <?php $logoHero = get_field( 'logo-hero' ); ?>
+            <?php if ( $logoHero ) { ?>
+	             <img src="<?php echo $logoHero['url']; ?>" alt="<?php echo $logoHero['alt']; ?>" />
             <?php } ?>
             <?php the_field( 'company-name' ); ?>
           </div>
