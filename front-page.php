@@ -9,7 +9,7 @@
             <?php if ( $logoHero ) { ?>
 	             <img src="<?php echo $logoHero['url']; ?>" alt="<?php echo $logoHero['alt']; ?>" />
             <?php } ?>
-            <?php the_field( 'company-name' ); ?>
+            <h3><?php the_field( 'company-name' ); ?></h3>
           </div>
         </div>
       </div>
