@@ -30,9 +30,7 @@
 
 
               <div class="carousel-item active">
-                <?php
-                // display a sub field value
-                the_sub_field('slider_image'); ?>
+                <img class="d-block w-100" src="<?php the_sub_field('slider_image'); ?>" alt="">
               </div>
 
         <?php  endwhile;
