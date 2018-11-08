@@ -30,11 +30,8 @@
 
 
 
-              <div class="carousel-item<?php if($i == 1): ?>active<?php endif; ?>">
-                <img class="d-block w-100" src="<?php the_sub_field('slider_image'); ?>" alt="<?php if($i == 1): ?>First slide
-                <?php elseif ($i == 2) : ?> Second slide <?php elseif ($i == 3) : ?> Third slide  
-
-                                                                                              <?php endif; ?>">
+              <div class="carousel-item<?php if($i == 1): ?> active<?php endif; ?>">
+                <img class="d-block w-100" src="<?php the_sub_field('slider_image'); ?>" alt="">
               </div>
 
         <?php $i++;  endwhile;
