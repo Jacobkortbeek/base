@@ -45,6 +45,4 @@ $(document).ready(function(){
 })
 });
 
-$( () => {
-	console.log("here I am");
-});
+console.log("here I am");
