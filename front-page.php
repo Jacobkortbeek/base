@@ -1,3 +1,3 @@
-Hello Heres Me
-
-Did this work
+<?php get_header(); ?>
+front page
+<?php get_header(); ?>
