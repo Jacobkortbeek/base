@@ -25,15 +25,16 @@
       if( have_rows('gallery_slider') ):
 
        	// loop through the rows of data
+        $i = 1;
           while ( have_rows('gallery_slider') ) : the_row(); ?>
 
 
 
-              <div class="carousel-item">
+              <div class="carousel-item<?php if($i == 1): ?>active<?php endif; ?>">
                 <img class="d-block w-100" src="<?php the_sub_field('slider_image'); ?>" alt="">
               </div>
 
-        <?php  endwhile;
+        <?php $i++;  endwhile;
 
       else :
 
