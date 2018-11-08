@@ -2,6 +2,8 @@
 
   add_theme_support( 'menus' );
 
+  register_post_type( staff );
+
   function register_theme_menus() {
     register_nav_menus(
       array(
