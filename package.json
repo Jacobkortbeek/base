@@ -1,0 +1,22 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "Wordpress theme",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jacobkortbeek/base.git"
+  },
+  "author": "jacob kortbeek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jacobkortbeek/base/issues"
+  },
+  "homepage": "https://github.com/Jacobkortbeek/base#readme",
+  "devDependencies": {
+    "flightplan": "^0.6.19"
+  }
+}
