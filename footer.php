@@ -38,8 +38,6 @@
         </div>
       </div>
     </div>
-    <script src="assets/js/jquery.matchHeight.js"></script>
-    <script src="assets/js/functions.js"></script>
   </footer>
 </body>
 </html>
