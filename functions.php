@@ -2,7 +2,23 @@
 
   add_theme_support( 'menus' );
 
-  register_post_type( staff );
+  function create_posttype() {
+
+    register_post_type( 'staff',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Staff' ),
+                'singular_name' => __( 'Staff' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'movies'),
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
 
   function register_theme_menus() {
     register_nav_menus(
