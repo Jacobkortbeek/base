@@ -14,7 +14,9 @@
     <header>
       <div class="container">
         <div class="row logo">
-          <img src="assets/images/logo.png" alt="">
+          <?php if ( get_field( 'logo') ) { ?>
+	            <img src="<?php the_field( 'logo' ); ?>" />
+          <?php } ?>
         </div>
         <div class="row nav">
           <div class="col-md-12">
