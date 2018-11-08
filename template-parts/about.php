@@ -15,8 +15,9 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <?php the_field( 'about_button', 23 ); ?>
-            <button type="button" name="button">More info</button>
+            <form action="<?php the_field( 'about_button', 23 ); ?>">
+              <button type="button" name="button">More info</button>
+            </form>
           </div>
         </div>
       </div>
