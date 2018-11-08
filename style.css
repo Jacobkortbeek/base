@@ -30,6 +30,7 @@ html hr, body hr {
   color: red; }
 
 html button, body button {
+  cursor: pointer;
   margin-top: 20px;
   margin-right: 10px;
   float: right;
