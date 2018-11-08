@@ -9,7 +9,8 @@
         array(
             'labels' => array(
                 'name' => __( 'Staff' ),
-                'singular_name' => __( 'Staff' )
+                'singular_name' => __( 'Staff' ),
+                'menu_name'           => __( 'Staff')
             ),
             'public' => true,
             'has_archive' => true,
