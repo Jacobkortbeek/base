@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 	});
 	$('.post .img').matchHeight({
 		byRow: true,
-		property: 'min-height',
+		property: 'max-height',
 		target: null,
 		remove: false
 	});
