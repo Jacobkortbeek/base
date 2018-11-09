@@ -66,10 +66,10 @@
               <?php
 
           // check if the repeater field has rows of data
-          if( have_rows('collapsible_information') ):
+          if( have_rows('collapsible_information', 23) ):
 
            	// loop through the rows of data
-              while ( have_rows('collapsible_information') ) : the_row(); ?>
+              while ( have_rows('collapsible_information', 23) ) : the_row(); ?>
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
