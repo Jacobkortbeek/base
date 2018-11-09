@@ -14,7 +14,7 @@
             ),
             'public' => true,
             'has_archive' => true,
-            'rewrite' => array('slug' => 'movies'),
+            'rewrite' => array('slug' => 'Staff'),
         )
     );
 
@@ -28,7 +28,7 @@
             ),
             'public' => true,
             'has_archive' => true,
-            'rewrite' => array('slug' => 'portfolio'),
+            'rewrite' => array('slug' => 'Portfolio'),
         )
     );
 }

@@ -5,7 +5,7 @@
   $args = array(
     'post_type' => 'portfolio',
     'posts_per_page' => $num_posts,
-    'orderby' => 'post_date',
+    'orderby' => 'post_date'
   );
 
   $query = new WP_Query( $args );
