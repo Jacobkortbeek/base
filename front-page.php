@@ -119,9 +119,7 @@
               </div>
               <div class="post-cont">
                 <h3><?php the_title(); ?></h3>
-                <p>
                   <?php the_excerpt(); ?>
-                </p>
               </div>
               <a href="<?php the_permalink(); ?>">More</a>
             </div>
