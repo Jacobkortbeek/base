@@ -76,8 +76,8 @@
 
     <div class="container portfolio">
       <div class="row port-row">
-        <?php $i=0; if( $query->have_posts() && $i < 3 ) : while( $query->have_posts() ) : $query->the_post(); ?>
-
+        <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+          <?php if( $i < 3 ) : ?>
         <div class="col-md-6 port-item">
           <div class="port" style="background-image: url('<?php if ( get_field( 'background_image') ) { ?>
     	                                                   <?php the_field( 'background_image' ); ?>
@@ -90,6 +90,7 @@
             </div>
           </div>
         </div>
+      <?php endif; ?>
         <?php $i++;?>
 
         <?php endwhile; endif; wp_reset_postdata(); ?>
