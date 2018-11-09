@@ -51,5 +51,5 @@ jQuery(document).ready(function($) {
 		$(this).removeClass('disabled');
 		console.log('removed');
 	});
-
+	console.log("loaded");
 });
