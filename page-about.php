@@ -69,24 +69,25 @@
           if( have_rows('collapsible_information', 23) ):
 
            	// loop through the rows of data
+            $i = 0;
               while ( have_rows('collapsible_information', 23) ) : the_row(); ?>
         <div class="card">
-          <div class="card-header">
+          <div class="card-header" id="headingOne<?php $i ?>">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne<?php $i ?>" aria-expanded="true" aria-controls="collapseOne<?php $i ?>">
                 <?php // display a sub field value
                 the_sub_field('collapse_title'); ?>
               </button>
             </h5>
           </div>
 
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div id="collapseOne<?php $i ?>" class="collapse show" aria-labelledby="headingOne<?php $i ?>" data-parent="#accordion">
             <div class="card-body">
               <?php the_sub_field('collapse_info'); ?>
             </div>
           </div>
         </div>
-      <?php endwhile;
+      <?php $i++ endwhile;
 
   else : ?>
 
