@@ -3,7 +3,6 @@
   $num_posts = get_option( 'posts_per_page' );
 
   $args = array(
-    'numberposts' => 4,
     'post_type' => 'portfolio',
     'posts_per_page' => $num_posts,
     'orderby' => 'post_date'
