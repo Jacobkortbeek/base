@@ -57,7 +57,6 @@
 </div>
       </div>
 
-    <?php set_query_var( query_posts('showposts=5'), $numPosts ) ?>
     <?php get_template_part( 'template-parts/portfolio', 'none' ); ?>
 
   </main>
