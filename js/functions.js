@@ -1,18 +1,18 @@
 jQuery(document).ready(function($) {
 	$(function() {
-		$('.card').matchHeight({
+		$('.post').matchHeight({
 			byRow: true,
 			property: 'height',
 			target: null,
 			remove: false
 	});
-	$('.card .card-body p').matchHeight({
+	$('.post .post-cont p').matchHeight({
 		byRow: true,
 		property: 'height',
 		target: null,
 		remove: false
 	});
-	$('.card-img-cont').matchHeight({
+	$('.post .img').matchHeight({
 		byRow: true,
 		property: 'max-height',
 		target: null,
