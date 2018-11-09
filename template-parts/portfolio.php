@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <?php $i++; else: ?>
+    <?php $i++;?>
 
     <?php endwhile; endif; wp_reset_postdata(); ?>
 
