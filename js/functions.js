@@ -45,9 +45,4 @@ jQuery(document).ready(function($) {
 			navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
 	})
 	});
-
-	$(document).ready(function(){
-		console.log("here I am");
-	});
-
 });
