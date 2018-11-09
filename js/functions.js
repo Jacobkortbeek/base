@@ -46,4 +46,10 @@ jQuery(document).ready(function($) {
 			navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
 	})
 	});
+
+	$('.owl-carousel .owl-nav').on('load', function(){
+		$(this).removeClass('disabled');
+		console.log('removed');
+	});
+
 });
