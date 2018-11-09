@@ -23,6 +23,7 @@ jQuery(document).ready(function($) {
 	$(document).ready(function(){
 		// $(".owl-carousel").owlCarousel();
 		$('.owl-carousel').owlCarousel({
+			nav: true,
 			loop:true,
 			margin:10,
 			responsiveClass:true,
