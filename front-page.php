@@ -126,7 +126,7 @@
               <a href="<?php the_permalink(); ?>">More</a>
             </div>
           </div>
-          <?php endif; endwhile; ?>
+          <?php endwhile; endif; ?>
         </div>
         <div class="row">
           <div class="col-md-12">
