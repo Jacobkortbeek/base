@@ -149,7 +149,7 @@ footer {
   border-radius: 10px;
   overflow: hidden; }
   .home .blog .post .img {
-    height: 25%;
+    /* height: 25%; */
     overflow: hidden; }
     .home .blog .post .img img {
       height: auto;
