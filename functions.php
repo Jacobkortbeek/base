@@ -57,6 +57,6 @@ add_action( 'init', 'create_posttype' );
     wp_enqueue_script( 'matchHeight', get_template_directory_uri() . '/js/jquery.matchHeight.js', array('jquery'), ' ', true);
     wp_enqueue_script( 'functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), ' ', true);
   }
-  add_action( 'wp_enqueue_scripts', 'wpt_theme_js', 10 );
+  add_action( 'wp_enqueue_scripts', 'wpt_theme_js', 1 );
 
 ?>
