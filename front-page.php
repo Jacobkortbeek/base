@@ -57,9 +57,6 @@
 </div>
       </div>
 
-
-
-
     <?php
 
       $num_posts = get_option( 'posts_per_page' );
