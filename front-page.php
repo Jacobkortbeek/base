@@ -95,5 +95,45 @@
       </div>
     </div>
 
+    <div class="container blog">
+        <div class="row">
+          <?php
+
+            $num_posts = get_option( 'posts_per_page' );
+
+            $args = array(
+              'post_type' => 'post',
+              'posts_per_page' => $num_posts,
+              'orderby' => 'post_date'
+            );
+
+            $query = new WP_Query( $args );
+
+          ?>
+          <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+          <div class="col-md-4">
+            <div class="post">
+              <div class="img">
+                <?php the_post_thumbnail( 'medium' ); ?>
+                <!-- <img src="assets/images/charis-gegelman-1128426-unsplash.jpg" alt=""> -->
+              </div>
+              <div class="post-cont">
+                <h3><?php the_title(); ?></h3>
+                <p>
+                  <?php the_excerpt(); ?>
+                </p>
+              </div>
+              <a href="<?php the_permalink(); ?>">More</a>
+            </div>
+          </div>
+          <?php endif; endwhile; ?>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button type="button" name="button">See All</button>
+          </div>
+        </div>
+      </div>
+
   </main>
 <?php get_footer(); ?>
