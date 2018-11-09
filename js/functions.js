@@ -23,7 +23,6 @@ jQuery(document).ready(function($) {
 	$(document).ready(function(){
 		// $(".owl-carousel").owlCarousel();
 		$('.owl-carousel').owlCarousel({
-			nav: true,
 			loop:true,
 			margin:10,
 			responsiveClass:true,
@@ -43,11 +42,12 @@ jQuery(document).ready(function($) {
 							loop:false
 					}
 			},
-			navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
+			navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+			nav: true
 	})
 	});
 
-	$(" .staff-slider .row .col-md-12 .owl-carousel .owl-nav ").load(function() {
+	$(" .owl-carousel .owl-nav ").ready(function() {
 		$(this).removeClass('disabled');
 		console.log('removed');
 	});
