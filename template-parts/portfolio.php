@@ -30,6 +30,7 @@
       </div>
     </div>
     <?php $i++; else: ?>
+      There are no more posts
     <?php endif; endwhile; endif; wp_reset_postdata(); ?>
 
   </div>
