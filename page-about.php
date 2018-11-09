@@ -72,16 +72,16 @@
             $i = 0;
               while ( have_rows('collapsible_information', 23) ) : the_row(); ?>
         <div class="card">
-          <div class="card-header" id="headingOne<?php $i ?>">
+          <div class="card-header" id="headingOne<?php echo $i; ?>">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne<?php $i ?>" aria-expanded="true" aria-controls="collapseOne<?php $i ?>">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne<?php echo $i; ?>" aria-expanded="true" aria-controls="collapseOne<?php echo $i; ?>">
                 <?php // display a sub field value
                 the_sub_field('collapse_title'); ?>
               </button>
             </h5>
           </div>
 
-          <div id="collapseOne<?php $i ?>" class="collapse show" aria-labelledby="headingOne<?php $i ?>" data-parent="#accordion">
+          <div id="collapseOne<?php echo $i; ?>" class="collapse show" aria-labelledby="headingOne<?php echo $i; ?>" data-parent="#accordion">
             <div class="card-body">
               <?php echo $i; ?>
               <?php the_sub_field('collapse_info'); ?>
