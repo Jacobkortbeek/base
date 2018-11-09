@@ -47,8 +47,8 @@ jQuery(document).ready(function($) {
 	})
 	});
 
-	$(" .owl-carousel .owl-nav ").ready(function() {
-		$(this).removeClass('disabled');
+	$(" .owl-carousel ").hover(function() {
+		$(".owl-nav").removeClass('disabled');
 		console.log('removed');
 	});
 	console.log("loaded");
