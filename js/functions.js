@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
 	})
 	});
 
-	$('.owl-carousel .owl-nav').on('load', function(){
+	$('.owl-carousel .owl-nav').on('Click', function(){
 		$(this).removeClass('disabled');
 		console.log('removed');
 	});
