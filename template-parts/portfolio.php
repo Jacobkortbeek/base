@@ -15,7 +15,6 @@
 <div class="container portfolio">
   <div class="row port-row">
     <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
-      <?php if($i==0): ?>
         <?php echo "$i"; ?>
     <div class="col-md-6 port-item">
       <div class="port" style="background-image: url('<?php if ( get_field( 'background_image') ) { ?>
@@ -30,8 +29,8 @@
       </div>
     </div>
     <?php $i++; else: ?>
-      There are no more posts
-    <?php endif; endwhile; endif; wp_reset_postdata(); ?>
+
+    <?php endwhile; endif; wp_reset_postdata(); ?>
 
   </div>
 </div>
