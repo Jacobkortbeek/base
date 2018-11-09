@@ -28,12 +28,6 @@
         <div class="row form">
           <div class="col-md-12">
             <?php the_field( 'contact_form', 18 ); ?>
-            <form class="" action="index.html" method="post">
-              <input type="text" name="" value="" placeholder="name">
-              <input type="text" name="" value="" placeholder="email">
-              <textarea name="name" rows="8" cols="80"></textarea>
-              <button type="button" name="button">Send</button>
-            </form>
           </div>
         </div>
       </div>
