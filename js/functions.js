@@ -1,20 +1,20 @@
 jQuery(document).ready(function($) {
 	$(function() {
-		$('.post').matchHeight({
+	$('.post').matchHeight({
 			byRow: true,
 			property: 'height',
 			target: null,
 			remove: false
 	});
-	$('.post .post-cont p').matchHeight({
+	$('.blog .row .col-md-4 .post .post-cont p').matchHeight({
 		byRow: true,
 		property: 'height',
 		target: null,
 		remove: false
 	});
-	$('.post .img').matchHeight({
+	$('.blog .row .col-md-4 .post .img').matchHeight({
 		byRow: true,
-		property: 'height',
+		property: 'min-height',
 		target: null,
 		remove: false
 	});
