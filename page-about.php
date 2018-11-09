@@ -87,7 +87,7 @@
             </div>
           </div>
         </div>
-      <?php $i++ endwhile;
+      <?php $i++; endwhile;
 
   else : ?>
 
