@@ -1,34 +1,36 @@
+<?php
+
+  $num_posts = get_option( 'posts_per_page' );
+
+  $args = array(
+    'post_type' => 'portfolio',
+    'posts_per_page' => $num_posts,
+    'orderby' => 'post_date'
+  );
+
+  $query = new WP_Query( $args );
+
+?>
 
 <div class="container portfolio">
-
-        <div class="row port-row">
-          <?php
-
-          // check if the repeater field has rows of data
-          if( have_rows('portfolio-field') ):
-
-           	// loop through the rows of data
-              while ( have_rows('portfolio-field') ) : the_row(); ?>
-          <div class="col-md-6 port-item">
-            <div class="port" style="background-image: url('<?php the_sub_field('background_image'); ?>');">
-              <div class="cont">
-                <h4><?php the_sub_field('portfolio_title'); ?></h4>
-                <p>
-                  <?php the_sub_field('portfolio_info'); ?>
-                </p>
-              </div>
-            </div>
-          </div>
-          <?php
-              endwhile;
-
-          else :
-
-              // no rows found
-
-          endif;
-
-          ?>
-
+  <div class="row port-row">
+    <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+      <?php if($i==0): ?>
+        <?php echo "$i"; ?>
+    <div class="col-md-6 port-item">
+      <div class="port" style="background-image: url('<?php if ( get_field( 'background_image') ) { ?>
+	                                                   <?php the_field( 'background_image' ); ?>
+                                                     <?php } ?>');">
+        <div class="cont">
+          <h4><?php the_field( 'portfolio_title' ); ?></h4>
+          <p>
+            <?php the_field( 'portfolio_info' ); ?>
+          </p>
         </div>
       </div>
+    </div>
+    <?php $i++; else: ?>
+    <?php endif; endwhile; endif; wp_reset_postdata(); ?>
+
+  </div>
+</div>
