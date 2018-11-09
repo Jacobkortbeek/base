@@ -83,7 +83,6 @@
 
           <div id="collapseOne<?php echo $i; ?>" class="collapse show" aria-labelledby="headingOne<?php echo $i; ?>" data-parent="#accordion">
             <div class="card-body">
-              <?php echo $i; ?>
               <?php the_sub_field('collapse_info'); ?>
             </div>
           </div>
