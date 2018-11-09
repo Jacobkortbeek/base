@@ -15,6 +15,7 @@
 <div class="container portfolio">
   <div class="row port-row">
     <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+
     <div class="col-md-6 port-item">
       <div class="port" style="background-image: url('<?php if ( get_field( 'background_image') ) { ?>
 	                                                   <?php the_field( 'background_image' ); ?>
@@ -28,9 +29,8 @@
       </div>
     </div>
     <?php $i++;?>
-    <?php if( is_front_page() && $i == 3 ): ?>
+
     <?php endwhile; endif; wp_reset_postdata(); ?>
-    <?php endif; ?>
-    <?php endwhile; endif; wp_reset_postdata(); ?>
+
   </div>
 </div>
