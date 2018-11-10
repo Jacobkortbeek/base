@@ -63,8 +63,6 @@ if( have_rows('gallery_accordion') ):
               </div>
             </div>
 
-        <?php the_sub_field('accordion_gallery'); ?>
-
     <?php $i++; endwhile;
 
 else :
