@@ -111,7 +111,7 @@
 
           ?>
           <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
-            <?php if($i < 4) : ?>
+            <?php if($i < 3) : ?>
           <div class="col-md-4">
             <div class="post">
               <div class="img">
