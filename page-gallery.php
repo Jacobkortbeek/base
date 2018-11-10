@@ -39,19 +39,23 @@ endif;
 
 // check if the repeater field has rows of data
 if( have_rows('gallery_accordion') ):
-
+  $images = get_field('accordion_gallery');
+  $size = 'full'; // (thumbnail, medium, large, full or custom size)
  	// loop through the rows of data
     while ( have_rows('gallery_accordion') ) : the_row(); ?>
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
               <div class="container">
                 <div class="row">
-
+                  <?php if( $images ): ?>
+                    <?php foreach( $images as $image ): ?>
                   <div class="col-md-4">
                     <div class="img">
                       <img src="assets/images/charis-gegelman-1128426-unsplash.jpg" alt="">
+                      <?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
                     </div>
                   </div>
-
+                  <?php endforeach; ?>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
