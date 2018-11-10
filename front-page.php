@@ -120,7 +120,7 @@
               </div>
               <div class="post-cont">
                 <h3><?php the_title(); ?></h3>
-                  <?php the_excerpt(); ?>
+                  <?php echo $i; ?><?php the_excerpt(); ?>
               </div>
               <a href="<?php the_permalink(); ?>">More</a>
             </div>
