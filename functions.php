@@ -66,6 +66,18 @@ add_action( 'init', 'create_posttype' );
 
   }
 
+  function create_widget( $name, $id, $description ) {
+    register_widget(array(
+      'name' => _( $name ),
+      'id' => $id,
+      'description' => _( $decsritption ),
+      'before_widget' => '<div class="col-md-4">',
+      'after_widget' => '</div>'
+    ));
+  }
+
+  create_widget( 'footer text block', 'footer-text', 'footer text area' );
+
   function wpt_theme_styles() {
       wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
       wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap/bootstrap.min.css' );
