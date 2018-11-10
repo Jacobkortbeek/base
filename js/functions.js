@@ -48,6 +48,10 @@ jQuery(document).ready(function($) {
 	});
 
 
-$('header nav .li').addClass('nav-item');
+	$(document).ready(function() {
+		$('header nav .li').addClass('nav-item');
+		console.log("added class");
+	});
+
 
 });
