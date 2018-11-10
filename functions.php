@@ -77,6 +77,8 @@ add_action( 'init', 'create_posttype' );
   }
 
   wpt_create_widget( 'footer text block', 'footer-text', 'footer text area' );
+  wpt_create_widget( 'footer logo', 'footer-logo', 'footer logo area' );
+  wpt_create_widget( 'footer menu', 'footer-menu', 'footer menu area' );
 
   function wpt_theme_styles() {
       wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
