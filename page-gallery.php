@@ -53,7 +53,6 @@ if( have_rows('gallery_accordion') ):
                     <?php foreach( $images as $image ): ?>
                   <div class="col-md-4">
                     <div class="img">
-                      <img src="assets/images/charis-gegelman-1128426-unsplash.jpg" alt="">
                       <?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
                     </div>
                   </div>
