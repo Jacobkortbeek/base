@@ -111,6 +111,7 @@
 
           ?>
           <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+            <?php if($i < 4) : ?>
           <div class="col-md-4">
             <div class="post">
               <div class="img">
@@ -124,7 +125,7 @@
               <a href="<?php the_permalink(); ?>">More</a>
             </div>
           </div>
-          <?php endwhile; endif; ?>
+        <?php endif; $i++; endwhile; endif; ?>
         </div>
         <div class="row">
           <div class="col-md-12">
