@@ -67,7 +67,7 @@ add_action( 'init', 'create_posttype' );
   }
 
   function wpt_create_widget( $name, $id, $description ) {
-    register_widget(array(
+    register_sidebar(array(
       'name' => _( $name ),
       'id' => $id,
       'description' => _( $decsritption ),
