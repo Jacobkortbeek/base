@@ -14,15 +14,16 @@
   <?php
 
 // check if the repeater field has rows of data
+$i = 0;
 if( have_rows('gallery_accordion') ):
 
  	// loop through the rows of data
     while ( have_rows('gallery_accordion') ) : the_row(); ?>
 
 
-        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><?php the_sub_field('accordion_title'); ?></a>
+        <a class="nav-item nav-link <?php if ($i == 0) : ?>active<?php endif; ?>" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><?php the_sub_field('accordion_title'); ?></a>
 
-    <?php endwhile;
+    <?php $i++; endwhile;
 
 else :
 
