@@ -47,4 +47,7 @@ jQuery(document).ready(function($) {
 	})
 	});
 
+
+$('header nav .li').addClass('nav-item');
+
 });
