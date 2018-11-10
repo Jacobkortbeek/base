@@ -49,7 +49,7 @@ jQuery(document).ready(function($) {
 
 
 	$(document).ready(function() {
-		$('header nav .li').addClass('nav-item');
+		$('header nav li').addClass('nav-item');
 		console.log("added class");
 	});
 
