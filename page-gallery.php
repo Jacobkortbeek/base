@@ -42,7 +42,7 @@ if( have_rows('gallery_accordion') ):
   // (thumbnail, medium, large, full or custom size)
  	// loop through the rows of data
     while ( have_rows('gallery_accordion') ) : the_row(); ?>
-    <?php $images = get_field('accordion_gallery');
+    <?php $images = get_sub_field('accordion_gallery');
     $size = 'full'; ?>
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
               <div class="container">
