@@ -1,3 +1,9 @@
+<?php
+/**
+ * Template Name: Contact Page
+ *
+ */
+?>
 <?php get_header(); ?>
 <main class="contact">
   <?php get_template_part( 'template-parts/contact', 'none' ); ?>
