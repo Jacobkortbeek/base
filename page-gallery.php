@@ -39,10 +39,11 @@ endif;
 
 // check if the repeater field has rows of data
 if( have_rows('gallery_accordion') ):
-  $images = get_field('accordion_gallery');
-  $size = 'full'; // (thumbnail, medium, large, full or custom size)
+  // (thumbnail, medium, large, full or custom size)
  	// loop through the rows of data
     while ( have_rows('gallery_accordion') ) : the_row(); ?>
+    <?php $images = get_field('accordion_gallery');
+    $size = 'full'; ?>
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
               <div class="container">
                 <div class="row">
