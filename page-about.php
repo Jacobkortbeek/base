@@ -58,6 +58,7 @@
 
             <?php endwhile; endif; ?>
           </div>
+          <p style="text-align: center;">Drag</p>
         </div>
       </div>
     </div>
