@@ -120,7 +120,6 @@
                 <!-- <img src="assets/images/charis-gegelman-1128426-unsplash.jpg" alt=""> -->
               </div>
               <div class="post-cont">
-                <?php echo $i ?>
                 <h3><?php the_title(); ?></h3>
                   <?php the_excerpt(); ?>
               </div>
@@ -135,9 +134,7 @@
                 <!-- <img src="assets/images/charis-gegelman-1128426-unsplash.jpg" alt=""> -->
               </div>
               <div class="post-cont">
-                <?php echo $i ?>
                 <h3><?php the_title(); ?></h3>
-                <?php echo "thsi is the the else" ?>
                   <?php the_excerpt(); ?>
               </div>
               <a href="<?php the_permalink(); ?>">More</a>
