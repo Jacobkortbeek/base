@@ -163,7 +163,12 @@ footer {
     justify-content: space-around;
     height: 100%; }
     .home .contact .form form textarea, .home .contact .form form input {
-      margin: 10px; }
+      margin: 10px;
+      width: 100%; }
+    .home .contact .form form label {
+      width: 100%; }
+    .home .contact .form form span {
+      width: 100%; }
 
 .about .title {
   background-image: linear-gradient(rgba(250, 250, 250, 0.25), rgba(250, 250, 250, 0.25)), url("../images/casey-horner-1128517-unsplash.jpg");
@@ -307,4 +312,9 @@ footer {
     justify-content: space-around;
     height: 100%; }
     .contact .contact .form form textarea, .contact .contact .form form input {
-      margin: 10px; }
+      margin: 10px;
+      width: 100%; }
+    .contact .contact .form form label {
+      width: 100%; }
+    .contact .contact .form form span {
+      width: 100%; }
