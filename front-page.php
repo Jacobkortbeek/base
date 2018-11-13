@@ -112,6 +112,7 @@
           ?>
           <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
             <?php if($i < 3) : ?>
+              <?php if($i < 1) : ?>
           <div class="col-md-4">
             <div class="post">
               <div class="img">
@@ -119,12 +120,30 @@
                 <!-- <img src="assets/images/charis-gegelman-1128426-unsplash.jpg" alt=""> -->
               </div>
               <div class="post-cont">
+                <?php echo $i ?>
                 <h3><?php the_title(); ?></h3>
                   <?php the_excerpt(); ?>
               </div>
               <a href="<?php the_permalink(); ?>">More</a>
             </div>
           </div>
+        <?php else : ?>
+          <div class="col-md-4 d-none d-sm-none d-md-block">
+            <div class="post">
+              <div class="img">
+                <?php the_post_thumbnail( 'medium' ); ?>
+                <!-- <img src="assets/images/charis-gegelman-1128426-unsplash.jpg" alt=""> -->
+              </div>
+              <div class="post-cont">
+                <?php echo $i ?>
+                <h3><?php the_title(); ?></h3>
+                <?php echo "thsi is the the else" ?>
+                  <?php the_excerpt(); ?>
+              </div>
+              <a href="<?php the_permalink(); ?>">More</a>
+            </div>
+          </div>
+        <?php endif; ?>
         <?php endif; $i++; endwhile; endif; ?>
         </div>
         <div class="row">
